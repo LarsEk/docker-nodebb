@@ -7,8 +7,6 @@ EXPOSE 80
 EXPOSE 443
 EXPOSE 4567
 
-RUN apt-get update; apt-get install curl
-
 RUN mkdir /src
 RUN git clone https://github.com/NodeBB/NodeBB.git /src
 WORKDIR /src
