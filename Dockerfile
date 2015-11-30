@@ -13,4 +13,4 @@ WORKDIR /src
 
 RUN npm install --yes --production
 RUN node app --setup
-CMD npm start
+CMD node app.js
