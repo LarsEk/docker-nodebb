@@ -15,4 +15,4 @@ WORKDIR /src
 
 RUN npm install --yes --production
 RUN node app --setup
-CMD node app.js
+CMD url="0.0.0.0:80" node app.js
