@@ -3,10 +3,7 @@
 # and copy its content in /usr/src/app, its WORKDIR
 FROM node:4.2
 ENV NODE_ENV production
-ENV PORT 80
 
-EXPOSE 80
-EXPOSE 443
 EXPOSE 4567
 
 RUN mkdir /src
@@ -15,4 +12,4 @@ WORKDIR /src
 
 RUN npm install --yes --production
 RUN node app --setup
-CMD url="0.0.0.0:80" node app.js
+CMD node app.js
